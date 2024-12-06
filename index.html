@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="numt">Números Sortudos</h1>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="numeros">Números</button>
+            <button class="tab-button" data-tab="nomes">Nomes</button>
+        </div>
+        <div class="tab-content active" id="numeros">
+            <h2 class="sortnumeros">Sorteio de Números</h2>
+            <input type="number" id="num-min" placeholder="Mínimo" min="0">
+            <input type="number" id="num-max" placeholder="Máximo" min="1">
+            <input type="number" id="num-quantidade" placeholder="Quantidade" min="1">
+            <button id="sortear-numeros">Sortear</button>
+            <div id="resultado-numeros" class="resultado"></div>
+        </div>
+        <div class="tab-content" id="nomes">
+            <h2 class="sortnumeros">Sorteio de Nomes</h2>
+            <textarea id="lista-nomes" placeholder="Digite os nomes um nome para cada linha"></textarea>
+            <input type="number" id="nomes-quantidade" placeholder="Quantidade" min="1">
+            <button id="sortear-numeros">Sortear</button>
+            <div id="resultado-nomes" class="resultado"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
